@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function showWeather() {
             country.map(function (el) {
                 if (el.name === item) {
-                    fetch("http://api.apixu.com/v1/current.json?key=38d2497fd3b242e78fb182314181601&q=" + el.capital).then(function (res) {
+                    fetch("https://api.apixu.com/v1/current.json?key=38d2497fd3b242e78fb182314181601&q=" + el.capital).then(function (res) {
                         return res.json();
                     }).then(function (data) {
                         var location = data.location,
